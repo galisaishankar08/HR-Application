@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/signin.css') }}">
+    <link rel="shortcut icon" href="{{url_for('static', filename = 'images/favicon.ico')}}" type="image/x-icon">
+
+    <title>Employee Sign In</title>
+</head >
+<body >
+    <div class="login-box">
+        <h2>Login</h2>
+        <form method="post">
+          <div class="user-box">
+            <input type="text" name="uname" autocomplete="false" required>
+            <label>Username</label>
+          </div>
+          <div class="user-box">
+            <input type="password" name="pwd" autocomplete="false" required>
+            <label>Password</label>
+          </div>
+
+            <a class="forget" href="#">Forget Password ?</a>
+          
+          <div class="btns flex">
+            <button type="Submit" name="save" class="btn"> Submit </button>
+            <a href="/signin" class="btn"> User Login</a>
+          </div>
+
+            <p>Not registered yet?  <a href="signup" class="signup" style="color: #03e9f4;">Create an Account</a> </p>
+              
+        </form>
+      </div>
+
+</body>
+</html>
